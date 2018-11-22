@@ -97,6 +97,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias rm="rm -rf"
+alias gadd= "git add ."
 alias clone="git clone"
 alias ns="npm start"
 alias nrt="npm run test"
