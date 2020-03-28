@@ -98,7 +98,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Misc
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias open="code ."
 alias rm="rm -rf"
@@ -111,11 +110,14 @@ alias zshconfig="code ~/.zshrc"
 alias ns="npm start"
 alias nrt="npm run test"
 alias nrd="npm run dev"
+alias dev="npm install --save-dev"
 
 # Yarn
 alias sb="yarn storybook"
 alias yd="yarn dev"
 alias ys="yarn start"
+alias yb="yarn build"
+alias yad="yarn add -D"
 
 # Git
 alias gs="git status"
@@ -129,6 +131,25 @@ alias cb="git checkout -B"
 alias co="git checkout"
 alias pf="git push --force"
 alias master="git checkout master"
+alias amend="git commit --amend"
+
+# Vagrant
+alias vs="vagrant ssh"
+alias vup="vagrant up"
+
+# Docker
+alias dcb="docker-compose build"
+alias dcu="docker-compose up"
+alias dct="docker-compose run --rm app sh -c 'python manage.py test'"
+alias dcm="docker-compose run --rm app sh -c 'python manage.py migrate'"
+alias dcmm="docker-compose run --rm app sh -c 'python manage.py makemigrations'"
+
+# Node
+alias ka="sudo killall -9 node"
+
+# Typeorm
+alias mg="npm run migration:generate -n"
+alias mr="npm run migration:run"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
